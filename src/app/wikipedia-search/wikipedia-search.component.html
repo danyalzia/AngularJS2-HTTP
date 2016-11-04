@@ -1,0 +1,8 @@
+<div>
+<h2>Wikipedia Search</h2>
+<p>Enter something in the field and see the asynchronous results!</p>
+<input #input type="text" placeholder="Search" (keyup)="searchKey(input.value)">
+<ul>
+<li *ngFor="let item of items">{{item}}</li>
+</ul>
+</div>  
